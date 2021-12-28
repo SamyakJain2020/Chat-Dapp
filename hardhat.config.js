@@ -21,6 +21,10 @@ module.exports = {
   networks: {
     hardhat: {
       chainId: 1337
+    },
+    ropsten: {
+      url: "https://ropsten.infura.io/v3/3ca0dbc96a56480e86c757b8dd52bc00",
+      accounts: [`0xb64982fdf5f142ac8623756e49f93caa`]
     }
   }
 };

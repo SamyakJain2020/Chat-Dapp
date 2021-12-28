@@ -9,6 +9,8 @@ const greeterAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3"
 function App() {
   // store greeting in local state
   const [greeting, setGreetingValue] = useState()
+  const [user, setUser] = useState()
+  const [message, setMessage] = useState()
 
   // request access to the user's MetaMask account
   async function requestAccount() {
@@ -42,14 +44,47 @@ function App() {
       fetchGreeting()
     }
   }
+  async function addUser(){
 
+  }
+
+  
+  async function sendMessage(){
+
+  }
+  
+  async function editMessage(){
+
+  }
+
+  
+  async function SendImage(){
+
+  }
+  
+  async function getMessages(){
+
+  }
+  
+  async function getUsers(){
+
+  }
   return (
     <div className="App">
       <header className="App-header">
-        <button onClick={fetchGreeting}>Fetch Greeting</button>
-        <button onClick={setGreeting}>Set Greeting</button>
+        <input onChange={e => setGreetingValue(e.target.value)  } placeholder="Add user" />
+      <button onClick={addUser}>Add user</button>
+        <input onChange={e => setGreetingValue(e.target.value)} placeholder="Send Message" />
+      <button onClick={sendMessage}>send Message</button>
+        <input onChange={e => setGreetingValue(e.target.value)} placeholder="Edit Message" />
+      <button onClick={editMessage}>Edit Message Message</button>
         <input onChange={e => setGreetingValue(e.target.value)} placeholder="Set greeting" />
+      <button onClick={SendImage}> Send Image</button>
       </header>
+      <div>
+
+      </div>
+
     </div>
   );
 }
